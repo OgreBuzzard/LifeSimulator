@@ -17,25 +17,24 @@
         <h1>Life Simulator</h1>
         <div class="fa fa-bars"></div>
     </header>
-    <!-- NEW BOOK FORM -->
-    <form action="#" id="new-form" class="container">
-        <label>
-          <input type="text" id="book-title" placeholder="title" required>
-        </label>
-        <label>
-          <input type="text" id="book-author" placeholder="author" required>
-        </label>
-        <label>
-          <input type="text" id="book-isbn" placeholder="isbn" required>
-        </label>
-        <label>
-          <input type="text" id="book-image-url" placeholder="image url" required>
-        </label>
-        <textarea id="book-description" rows="8" cols="40" placeholder="description..." required></textarea>
-        <button type="submit">submit</button>
-    </form>
 
-    <script src="scripts/models/lifesim.js" type="text/javascript"></script>
+    <p>Age: <span id="ageValue" /></p>
+    <p>Income: $<span id="incomeValue" /></p>
+    <p>Take Home: $<span id="takeHomeValue" /></p>
+    <p>Rent: $<span id="rentValue" /></p>
+    <p>Utilities: $<span id="utilitiesValue" /></p>
+    <p>Food: $<span id="foodValue" /></p>
+    <p>Entertainment: $<span id="entValue" /></p>
+    <p>Savings: $<span id="savingsValue" /></p>
+    <p><button onclick="payCCDebt()" id="payCCDebt">Pay Credit Card Debt</button></p>
+    <p><button onclick="payStudentDebt()" id="payStudentDebt">Pay Student Loan Debt</button></p>
+    <p>Credit Card Debt: $<span id="ccDebtValue" /></p>
+    <p>Student Loan Debt: $<span id="studentDebtValue" /></p>
+    <p>Happiness: <span id="happinessValue" /></p>
+
+    <p><button onclick="advanceMonth()" id="nextMonth">Next Month</button></p>
+    
+    <script src="lifesim.js" type="text/javascript"></script>
 </body>
 
 </html>
